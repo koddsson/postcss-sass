@@ -4,9 +4,9 @@
   "description": "Use Sass as a PostCSS plugin",
   "author": "Jonathan Neal <jonathantneal@hotmail.com>",
   "license": "CC0-1.0",
-  "repository": "jonathantneal/postcss-sass",
-  "homepage": "https://github.com/jonathantneal/postcss-sass#readme",
-  "bugs": "https://github.com/jonathantneal/postcss-sass/issues",
+  "repository": "koddsson/postcss-sass",
+  "homepage": "https://github.com/koddsson/postcss-sass#readme",
+  "bugs": "https://github.com/koddsson/postcss-sass/issues",
   "main": "index.cjs.js",
   "module": "index.es.mjs",
   "files": [
