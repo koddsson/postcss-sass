@@ -26,7 +26,7 @@ scope and avoid unrelated commits.
    cd postcss-sass
 
    # Assign the original repo to a remote called "upstream"
-   git remote add upstream git@github.com:jonathantneal/postcss-sass.git
+   git remote add upstream git@github.com:koddsson/postcss-sass.git
 
    # Install the tools necessary for testing
    npm install

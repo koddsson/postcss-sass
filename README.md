@@ -32,7 +32,7 @@ after Sass, watching for changes to Sass imports, and preserving source maps.
 Add [PostCSS Sass] to your build tool:
 
 ```sh
-npm install postcss @csstools/postcss-sass --save-dev
+npm install postcss @koddsson/postcss-sass --save-dev
 ```
 
 #### Node
@@ -40,7 +40,7 @@ npm install postcss @csstools/postcss-sass --save-dev
 Use [PostCSS Sass] to process your CSS:
 
 ```js
-require('@csstools/postcss-sass').process(YOUR_CSS);
+require('@koddsson/postcss-sass').process(YOUR_CSS);
 ```
 
 #### PostCSS
@@ -49,7 +49,7 @@ Use [PostCSS Sass] as a plugin:
 
 ```js
 postcss([
-  require('@csstools/postcss-sass')(/* node-sass options */)
+  require('@koddsson/postcss-sass')(/* node-sass options */)
 ]).process(YOUR_CSS);
 ```
 
@@ -63,7 +63,7 @@ npm install postcss-scss --save-dev
 
 ```js
 const postcss = require('postcss');
-const postcssSass = require('@csstools/postcss-sass');
+const postcssSass = require('@koddsson/postcss-sass');
 
 postcss([
   postcssSass(/* pluginOptions */)
@@ -88,7 +88,7 @@ var postcss = require('gulp-postcss');
 gulp.task('css', function () {
   return gulp.src('./src/*.css').pipe(
     postcss([
-      require('@csstools/postcss-sass')(/* node-sass options */)
+      require('@koddsson/postcss-sass')(/* node-sass options */)
     ])
   ).pipe(
     gulp.dest('.')
@@ -113,7 +113,7 @@ grunt.initConfig({
   postcss: {
     options: {
       use: [
-        require('@csstools/postcss-sass')(/* node-sass options */)
+        require('@koddsson/postcss-sass')(/* node-sass options */)
       ]
     },
     dist: {
@@ -131,8 +131,8 @@ grunt.initConfig({
 [cli-url]: https://travis-ci.org/jonathantneal/postcss-sass
 [git-img]: https://img.shields.io/badge/support-chat-blue.svg
 [git-url]: https://gitter.im/postcss/postcss
-[npm-img]: https://img.shields.io/npm/v/@csstools/postcss-sass.svg
-[npm-url]: https://www.npmjs.com/package/@csstools/postcss-sass
+[npm-img]: https://img.shields.io/npm/v/@koddsson/postcss-sass.svg
+[npm-url]: https://www.npmjs.com/package/@koddsson/postcss-sass
 [win-img]: https://img.shields.io/appveyor/ci/jonathantneal/postcss-sass.svg
 [win-url]: https://ci.appveyor.com/project/jonathantneal/postcss-sass
 
@@ -141,6 +141,6 @@ grunt.initConfig({
 [dart-sass]: https://github.com/sass/dart-sass
 [dart-sass options]: https://github.com/sass/dart-sass#javascript-api
 [PostCSS]: https://github.com/postcss/postcss
-[PostCSS Sass]: https://github.com/jonathantneal/postcss-sass
+[PostCSS Sass]: https://github.com/koddsson/postcss-sass
 [Sass]: https://github.com/sass/dart-sass
 [SCSS Parser]: https://github.com/postcss/postcss-scss
